@@ -1,0 +1,31 @@
+My homepage built with Jekyll & SASS. The data here is generated into a static site hosting my portfolio, articles, and contact info.
+
+```
+.
+├── README.md
+├── index.md
+├── 404.html
+│
+├── assets
+│   └── main.scss
+│
+├── _sass
+│   ├── _reset.scss
+│   ├── _base.scss
+│   └── _layout.scss
+│
+├── _includes
+│   ├── meta.html
+│   ├── navigation.html
+│   └── analytics.html
+│
+├── _layouts
+│   ├── default.html
+│   ├── page.html
+│   └── post.html
+│
+├──_data
+│   └── music.yml
+│
+└── _config.yml
+```
