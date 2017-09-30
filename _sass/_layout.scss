@@ -1,0 +1,27 @@
+/**
+ * Fonts
+ */
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin-left: 10%;
+}
+
+/**
+ * Site header
+ */
+header {
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 76px;
+    font-weight: 400;
+    margin-top: 200px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}
