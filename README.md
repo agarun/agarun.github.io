@@ -1,4 +1,4 @@
-My homepage built with Jekyll & SASS. The data here is generated into a static site hosting my portfolio, articles, and contact info.
+My homepage built with Jekyll and SASS. The data files here are used to generate a static site hosting my portfolio, articles, and contact info.
 
 ```
 .
@@ -10,7 +10,7 @@ My homepage built with Jekyll & SASS. The data here is generated into a static s
 │   └── main.scss
 │
 ├── _sass
-│   ├── _reset.scss
+│   ├── _normalize.scss
 │   ├── _base.scss
 │   └── _layout.scss
 │
