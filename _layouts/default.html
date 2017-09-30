@@ -1,1 +1,20 @@
-{{ content }}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ site.title }}</title>
+    {% include meta.html %}
+    <link rel="stylesheet" type="text/css" href="{{ "assets/main.css" | prepend: site.baseurl }}">
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
+      </header>
+    </div>
+    {% include navigation.html %}
+
+    {{ content }}
+  </body>
+  {% include analytics.html %}
+</html>
