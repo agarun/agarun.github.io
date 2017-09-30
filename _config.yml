@@ -26,12 +26,18 @@ github_username:  agarun
 # Build settings
 markdown: kramdown
 
+google_analytics: UA-107334049-1
+
+sass:
+  style: :compressed
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 # exclude:
-#   - Gemfile
-#   - Gemfile.lock
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
