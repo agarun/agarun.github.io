@@ -2,10 +2,10 @@
   <ul>
     {% if page.path == "index.html" %}
       <span class="fade-on-start first">
-        Hey! I'm Aaron.
+          Hey! I'm Aaron.
       </span>
     {% endif %}
-    <span class="fade-on-start third">
+    <span class="{% if page.path == "index.html" %}fade-on-start third{% endif %}">
       <li><a href="work.html">Projects</a></li>,
       <li><a href="contact.html">Contact</a></li>,
       <li><a href="about.html">About</a></li>,
