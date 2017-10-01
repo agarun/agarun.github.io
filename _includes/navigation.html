@@ -1,10 +1,8 @@
-<nav>
+<nav class="{% if page.path == "index.html" %}fade-on-start second{% endif %}">
   <ul>
-    <span class="{% if page.path == "index.html" %}fade-on-start second{% endif %}">
-      <li><a href="work.html">Projects</a></li>,
-      <li><a href="contact.html">Contact</a></li>,
-      <li><a href="about.html">About</a></li>,
-      <li><a href="resume.html">R&eacute;sum&eacute;</a></li>.
-    </span>
+    <li><a href="work.html">Projects</a></li>,
+    <li><a href="contact.html">Contact</a></li>,<!-- TODO: newline if mobile -->
+    <li><a href="about.html">About</a></li>,
+    <li><a href="resume.html">R&eacute;sum&eacute;</a></li>.
   </ul>
 </nav>
