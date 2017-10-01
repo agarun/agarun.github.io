@@ -1,12 +1,23 @@
 /**
  * Fonts
  */
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display|Work+Sans:300,400,500);
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
 
 .container {
-  max-width: 960px;
-  width: 100%;
-  margin-left: 10%;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+// Mobile container
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin-left: 6%;
+  }
 }
 
 /**
@@ -15,9 +26,10 @@
 header {
   h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 76px;
+    font-size: 84px;
     font-weight: 400;
-    margin-top: 200px;
+    position: relative;
+    margin-top: 280px;
   }
 
   a {

@@ -7,14 +7,17 @@
   </head>
 
   <body>
-    <div class="container">
-      <header>
-        <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
-      </header>
-    </div>
-    {% include navigation.html %}
+    <div class="wrapper">
+      <div class="container">
+        <header class="intro">
+          <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
+        </header>
+      </div>
 
-    {{ content }}
+      {% include navigation.html %}
+
+      {{ content }}
+    </div>
   </body>
   {% include analytics.html %}
 </html>
