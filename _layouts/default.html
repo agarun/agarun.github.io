@@ -5,17 +5,12 @@
     {% include meta.html %}
     <link rel="stylesheet" type="text/css" href="{{ "assets/main.css" | prepend: site.baseurl }}">
   </head>
-
   <body>
-    <div class="wrapper">
-      <div class="container">
-        <header class="intro">
-          <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
-        </header>
-      </div>
-
+    <div class="container">
+      <header class="fade-on-start second">
+        <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
+      </header>
       {% include navigation.html %}
-
       {{ content }}
     </div>
   </body>

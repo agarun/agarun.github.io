@@ -3,7 +3,7 @@ My homepage built with Jekyll and SASS. The data files here are used to generate
 ```
 .
 ├── README.md
-├── index.md
+├── index.html
 ├── 404.html
 │
 ├── assets
