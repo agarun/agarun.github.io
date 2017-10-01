@@ -29,11 +29,12 @@ markdown: kramdown
 google_analytics: UA-107334049-1
 
 sass:
-  style: :compressed
+  style: compressed
+  
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
+exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
