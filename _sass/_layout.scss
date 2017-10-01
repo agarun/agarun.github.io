@@ -1,22 +1,23 @@
 /**
  * Fonts
  */
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display|Work+Sans:300,400,500);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display|Work+Sans:300,400,500,700);
 
 body {
   -webkit-font-smoothing: antialiased;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
 }
 
 .container {
-  max-width: 70%;
+  max-width: 66%;
   margin: 0 auto;
 }
 
-// Mobile container
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) { // MOBILE < 500 PX
   .container {
-    width: 100%;
-    margin-left: 6%;
+    max-width: 100%;
+    margin: 6%;
   }
 }
 
@@ -29,11 +30,92 @@ header {
     font-size: 84px;
     font-weight: 400;
     position: relative;
-    margin-top: 280px;
+    margin-top: 280px; // TOP SPACE. ALTERNATIVE: VERTICAl-ALIGN: MIDDLE
   }
 
   a {
     text-decoration: none;
-    color: #000;
+    color: black;
+  }
+}
+
+nav {
+  font-weight: 400;
+  letter-spacing: 0.10px;
+  /**
+   * Unselectable
+   */
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+
+  ul {
+    list-style: none;
+    font-size: 23px;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+
+    a {
+      text-decoration: none;
+      color: $weird-blue;
+    }
+
+    a:hover, a:active {
+      color: black;
+    }
+  }
+}
+
+/**
+ * Fading
+ */
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}
+
+.fade-on-start {
+	opacity: 0;
+	-webkit-animation: fadeIn ease 1;
+	-moz-animation: fadeIn ease 1;
+	animation: fadeIn ease 1;
+
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+
+	-webkit-animation-duration: 0.75s;
+	-moz-animation-duration: 0.75s;
+	animation-duration: 0.75s;
+
+  &.first {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  }
+
+  &.second {
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+  }
+
+  &.third {
+  -webkit-animation-delay: 1.3s;
+  -moz-animation-delay: 1.3s;
+  animation-delay: 1.3s;
   }
 }
