@@ -1,13 +1,11 @@
 /**
  * Fonts
  */
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display|Work+Sans:300,400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display|Eczar:400,700|Work+Sans:300,400,500,700);
 
-body {
-  -webkit-font-smoothing: antialiased;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 18px;
-}
+/**
+ * Container
+ */
 
 .container {
   max-width: 66%;
@@ -24,6 +22,7 @@ body {
 /**
  * Site header
  */
+
 header {
   h1 {
     font-family: 'Playfair Display', serif;
@@ -118,4 +117,80 @@ nav {
   -moz-animation-delay: 1.0s;
   animation-delay: 1.0s;
   }
+
+  &.fourth {
+  -webkit-animation-delay: 1.4s;
+  -moz-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateX(20px);
+  }
+  100% {
+     opacity: 1;
+     -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+   0% {
+      opacity: 0;
+      transform: translateX(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+.fade-in-right {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+/**
+ * Body
+ */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+p.blurb {
+  margin-top: -15px;
+  margin-bottom: 50px;
+}
+
+p.info {
+  line-height: 1.54;
+  max-width: 760px;
+}
+
+.content {
+  text-indent: 20px;
+
+  h3 {
+    font-family: 'Eczar', serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    margin-top: 30px;
+    margin-bottom: -16px;
+  }
+}
+
+a {
+
 }
