@@ -4,10 +4,11 @@
     <title>{{ site.title }}</title>
     {% include meta.html %}
     <link rel="stylesheet" type="text/css" href="{{ "assets/main.css" | prepend: site.baseurl }}">
+    <!-- TODO: favico -->
   </head>
   <body>
     <div class="container">
-      <header class="{% if page.path == "index.html" %}fade-on-start second{% endif %}">
+      <header class="{% if page.path == "index.html" %}fade-on-start first{% endif %}">
         <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
       </header>
       {% include navigation.html %}
