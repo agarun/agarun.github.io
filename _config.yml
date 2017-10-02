@@ -28,7 +28,7 @@ markdown: kramdown
 
 google_analytics: UA-107334049-1
 
-# permalink: /:title/
+permalink: /:categories/:year/:month/:day/:title/
 
 sass:
   style: compressed
