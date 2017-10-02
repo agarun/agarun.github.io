@@ -80,8 +80,8 @@ nav {
       color: $weird-blue;
     }
 
-    a:hover, a:active {
-      color: black; // a:active not working
+    a:hover, .active {
+      color: black;
     }
   }
 }

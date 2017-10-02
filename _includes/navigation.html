@@ -1,9 +1,9 @@
 <nav class="{% if page.path == "index.html" %}fade-on-start second{% endif %}">
   <ul>
-    <li><a href="/work/">Projects</a></li>,
-    <li><a href="/contact/">Contact</a></li>,
+    <li><a href="/work/" class="{% if page.title == "Work" %}active{% endif %}">Projects</a></li>,
+    <li><a href="/contact/" class="{% if page.title == "Contact" %}active{% endif %}">Contact</a></li>,
     <span class="mobile-separator"></span>
-    <li><a href="/about/">About</a></li>,
+    <li><a href="/about/" class="{% if page.title == "About" %}active{% endif %}">About</a></li>,
     <li><a href="/resume/">R&eacute;sum&eacute;</a></li>.
   </ul>
 </nav>
