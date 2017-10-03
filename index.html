@@ -13,7 +13,7 @@ layout: default
         <p><a href="" class="link-snap">muvy</a></p>
       <h2><strong>Articles</strong></h2>
         {% for post in site.posts %}
-          <p><a href="/{{ post.url }}/" class="link-snap">{{ post.title }}</a></p>
+          <p><a href="{{ post.url }}" class="link-snap">{{ post.title }}</a></p>
           <p class="date">{{ post.date | date: "%B %e %Y" }}</p>
         {% endfor %}
   </div>
