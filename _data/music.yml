@@ -16,9 +16,9 @@
       title: Ma She'Hashuv
       link: https://janebordeauxtlv.bandcamp.com/album/ma-shehashuv
 
-    - artist:
-      title:
-      link:
+    - artist: Kacy Hill
+      title: Like A Woman
+      link: https://www.youtube.com/watch?v=4HQhwpTuDGE&list=PLYRAemK08dUCgapvPcGGDVHm7OQJjdWra
 
     - artist: Sinjin Hawke
       title: First Opus
@@ -26,7 +26,7 @@
 
     - artist: Brother Ali
       title: All the Beauty in This Whole Life
-      link: https://www.youtube.com/watch?v=r9QiJm9JhZE
+      link: https://www.youtube.com/watch?v=57Dz6rv7ytE&list=PLJNbijG2M7OxiIfF-Npe2uskoDx4wJCxh
 
     - artist: Loyle Carner
       title: Yesterday's Gone
@@ -82,14 +82,6 @@
     - artist: Glass Animals
       title: How to Be a Human Being
       link: https://www.youtube.com/watch?v=9lUfunQW84U&list=PLQReQsnItdzYQzuK2yD7ipXIT9ce9WAWA
-
-    - artist:
-      title:
-      link:
-
-    - artist:
-      title:
-      link:
 
 - year: 2015
   albums:
@@ -147,9 +139,9 @@
       title: This Is My Hand
       link: https://www.youtube.com/watch?v=fE1Y1QPNz5I&list=PL1BS70vPwk2APoVV4G1Yl0JNFJdqmiZMa
 
-    - artist: SZA
-      title: Z
-      link: https://www.youtube.com/watch?v=nSwU57Gy8uU
+    - artist: Oskar Schuster
+      title: Sneeuwland
+      link: https://www.youtube.com/watch?v=X6xdJqqcyuI
 
     - artist: BADBADNOTGOOD
       title: III
@@ -158,6 +150,10 @@
     - artist: FKA twigs
       title: LP1
       link: https://www.youtube.com/watch?v=FgErH86Jwkw&list=PLozpaYM0S8D42xuFbWBl7-8xF4sw2qJxL
+
+    - artist: SZA
+      title: Z
+      link: https://www.youtube.com/watch?v=nSwU57Gy8uU
 
 - year: 2013
   albums:
@@ -181,12 +177,20 @@
       title: Aventine
       link: https://www.youtube.com/watch?v=glMUOtP0Og8
 
+    - artist: Bilal
+      title: A Love Surreal
+      link: https://www.youtube.com/playlist?list=PLp7MYP0R-rYG7AAc0jt7nEplTDHewdtuh
+
     - artist: Calibre
       title: Spill
       link: https://www.youtube.com/watch?v=IqejcS6f2eM
 
 - year: Older
   albums:
+    - artist: Oskar Schuster
+      title: Dear Utopia
+      link: https://www.youtube.com/watch?v=6yo7iCYtX24&list=PLZMuyfFUvVATG12HL_3_WY-KDxUQq-ZSz
+
     - artist: Rasmus Kellerman
       title: The 24th
       link: https://www.youtube.com/watch?v=LmUAvTlOlzM
@@ -203,8 +207,6 @@
       title: Since I Left You
       link: https://www.youtube.com/watch?v=NjzssPnkC04
 
-# Oskar Schuster
-# Kacy Hill
-# Bilal
-# Blockhead
-# The internet
+    - artist: Doom
+      title: Born Like This
+      link: https://www.youtube.com/watch?v=xDV3vWglAHA
