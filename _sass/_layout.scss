@@ -204,6 +204,10 @@ p.blurb {
   }
 }
 
+.no-indent {
+  text-indent: 0px;
+}
+
 .about {
   line-height: 1.54;
   max-width: 760px;
@@ -245,4 +249,34 @@ p.blurb {
 .index-posts {
   margin-top: 23px;
   margin-bottom: -16px;
+}
+
+/**
+ * SVG Icons
+ */
+
+.svg-icons {
+  a {
+    display: inline;
+    text-decoration: none;
+    margin: 0.6rem;
+  }
+}
+
+.icon {
+  width: 3.6rem;
+  height: 3.6rem;
+  transition: 200ms ease-out;
+  will-change: transform, contents;
+
+  .svg-icons:hover & {
+    fill: rgba(#000, 0.36);
+  }
+
+  @each $social, $color in $brandColors {
+    a:hover &.icon-#{$social} {
+      fill: $color;
+      transform: scale(1.1);
+    }
+  }
 }
