@@ -24,6 +24,15 @@ My homepage built with Jekyll and SASS. The data files here are used to generate
 │   ├── page.html
 │   └── post.html
 │
+├── _pages
+│   ├── about.html
+│   ├── contact.html
+│   └── work.html
+│
+├── _posts
+│   ⋮
+│   └── 2017-10-02-…html
+│
 ├──_data
 │   └── music.yml
 │
