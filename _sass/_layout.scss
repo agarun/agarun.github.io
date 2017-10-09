@@ -22,7 +22,7 @@ header {
     font-size: 84px;
     font-weight: 400;
     position: relative;
-    margin-top: 250px; // TOP SPACE. ALTERNATIVE?: VERTICAl-ALIGN: MIDDLE
+    margin-top: 236px; // TOP SPACE. ALTERNATIVE?: VERTICAl-ALIGN: MIDDLE
   }
 
   a {
@@ -176,7 +176,7 @@ body {
 }
 
 p.blurb {
-  margin-top: -15px;
+  margin-top: -13px;
   margin-bottom: 50px;
 }
 
@@ -320,7 +320,47 @@ main {
 }
 
 /**
- * SVG Icons
+ * SVG Icons Mobile Adjustments
  */
 
-  // TODO: display: none; on mobile, also no-shrink if im gonna show text somehow.
+@media only screen and (max-width: 500px) {
+  #flex-container {
+    a {
+      padding: 0.9rem 1.0rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  #flex-container {
+    a {
+      padding: 1.4rem 0;
+    }
+  }
+
+  #item {
+    align-items: center;
+    justify-content: center;
+  }
+
+  span {
+    display: none;
+  }
+}
+
+
+/**
+ * Index.html small project banners
+ */
+
+#flex-container-proj-cards {
+  display: flex;
+  // padding etc
+}
+
+#proj-card {
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+  border: grey solid 1px;
+}
