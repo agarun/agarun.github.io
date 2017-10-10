@@ -22,7 +22,7 @@ header {
     font-size: 84px;
     font-weight: 400;
     position: relative;
-    margin-top: 236px; // TOP SPACE. ALTERNATIVE?: VERTICAl-ALIGN: MIDDLE
+    margin-top: 242px; // TOP SPACE. ALTERNATIVE?: VERTICAl-ALIGN: MIDDLE
   }
 
   a {
@@ -181,8 +181,6 @@ p.blurb {
 }
 
 .content {
-  text-indent: 20px;
-
   a {
     color: black;
     text-decoration: none;
@@ -202,10 +200,6 @@ p.blurb {
     text-transform: uppercase;
     margin-top: 50px;
   }
-}
-
-.no-indent {
-  text-indent: 0px;
 }
 
 .about {
@@ -246,6 +240,10 @@ p.blurb {
   color: grey;
 }
 
+.indent {
+  text-indent: 20px;
+}
+
 .index-posts {
   margin-top: 23px;
   margin-bottom: -16px;
@@ -283,6 +281,8 @@ p.blurb {
     $i: index(($brandColors), ($brandName $color));
     &:nth-child(#{$i}) a { color: $color; }
   }
+
+  &:nth-child(1) { margin-top: 10px; }
 }
 
 main {
@@ -348,19 +348,42 @@ main {
   }
 }
 
-
 /**
- * Index.html small project banners
+ * Index.html small project cards
  */
 
-#flex-container-proj-cards {
-  display: flex;
-  // padding etc
+.wrapper-proj-cards {
+  width: 700px;
+  padding-top: 15px;
 }
 
-#proj-card {
-  width: 120px;
-  height: 120px;
-  border-radius: 4px;
-  border: grey solid 1px;
+.flex-container-proj-cards {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 10px;
+  margin-left: .7rem;
+  a { margin: .6rem; }
+}
+
+.proj-card {
+  width: 200px;
+  height: 140px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(10, 10, 10, .1), 0 0 0 1px rgba(20, 20, 20, .08);
+}
+
+.proj-card-title {
+  margin: 6px;
+}
+
+/**
+ * Work.html medium project banners
+ */
+
+#flex-container-proj-banners {
+
+}
+
+#proj-banner {
+
 }
