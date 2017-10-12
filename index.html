@@ -2,19 +2,35 @@
 layout: default
 ---
 {% if page.path == "index.html" %}
-  <p class="fade-on-start fade-in-right third blurb">
-    Hey! I'm Aaron. I'm a software developer in New York City.
-  </p>
+  <!-- <p class="fade-on-start fade-in-right third blurb">
+    Hey! I'm Aaron. I'm a software engineer in New York City.
+  </p> -->
 {% endif %}
 <div class="fade-on-start third">
-  <div class="content">
+  <div class="content indent">
     <h3>recent work</h3>
       <h2><strong>Projects</strong></h2>
-        <p><a href="" class="link-snap">muvy</a></p>
-      <h2><strong>Articles</strong></h2>
+      <div class="wrapper-proj-cards">
+        <div class="flex-container-proj-cards">
+          <a href="" class="proj-card">
+            <span class="proj-card-title">muvy</span>
+          </a>
+          <a href="" class="proj-card">
+            <span class="proj-card-title">Network Modeling</span>
+          </a>
+          <a href="" class="proj-card">
+            <span class="proj-card-title">see all</span>
+          </a>
+        </div>
+      </div>
+      <h2><strong>Posts</strong></h2>
         {% for post in site.posts %}
-          <p><a href="{{ post.url }}" class="link-snap">{{ post.title }}</a></p>
-          <p class="date">{{ post.date | date: "%B %e %Y" }}</p>
+            <p class="index-posts">
+              <a href="{{ post.url }}" class="link-snap">{{ post.title }}</a>
+              <span class="date"> &middot; {{ post.date | date: "%B %Y" }}</span>
+            </p>
         {% endfor %}
+        <!-- cookie to disable fade on 2nd -->
+      </p>
   </div>
 </div>
