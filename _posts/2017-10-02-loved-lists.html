@@ -5,15 +5,16 @@ category: posts
 ---
 <div class="about">
   <div class="content">
-    <h3 class="no-indent">loved lists&#58; albums</h3>
+    <h3 id="top">loved lists&#58; albums</h3>
     My favorite albums from recent years.<br>Browse by year or <span id="puts_random_link"></span>.
 
     {% for y in site.data.music %}
-      <h3 style="text-indent: 0px; margin-top: 30px;">{{ y.year }}</h3>
+      <h3 style="margin-top: 30px;">{{ y.year }}</h3>
       {% for a in y.albums %}
         <a href="{{ a.link }}" class="link-snap">{{ a.artist }} - {{ a.title }}</a><br>
       {% endfor %}
     {% endfor %}
+    <a href="#top" class="link-snap back-to-top">&#x21c8;</a>
   </div>
 </div>
 
