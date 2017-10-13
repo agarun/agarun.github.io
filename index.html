@@ -1,15 +1,15 @@
 ---
 layout: default
 ---
-<!-- {% if page.path == "index.html" %}
+<!--
   <p class="fade-on-start fade-in-right blurb">
     Hey! I'm Aaron. I'm a software engineer in New York City.
   </p>
-{% endif %} -->
+-->
 <div class="fade-on-start">
   <div class="content indent">
     <h3>recent work</h3>
-      <h2><strong>Projects</strong></h2>
+      <h2>Projects</h2>
       <div class="wrapper">
         <div class="flex-container-proj-cards">
           <a href="" class="proj-card">
@@ -23,14 +23,13 @@ layout: default
           </a>
         </div>
       </div>
-      <h2><strong>Posts</strong></h2>
+      <h2>Posts</h2>
         {% for post in site.posts %}
             <p class="index-posts">
               <a href="{{ post.url }}" class="link-snap">{{ post.title }}</a>
               <span class="date"> &middot; {{ post.date | date: "%B %Y" }}</span>
             </p>
         {% endfor %}
-        <!-- cookie to disable fade on 2nd -->
       </p>
   </div>
 </div>
