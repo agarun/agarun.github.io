@@ -326,16 +326,23 @@ main {
 }
 
 .email {
-  font-family: 'Eczar', serif;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  
-  a {
+  margin-bottom: 64px;
+
+  a.title {
     color: black;
+    font-family: 'Eczar', serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     text-decoration: none;
+  }
+
+  span {
+    display: block;
+    margin-top: 10px;
+    margin-left: 36px;
+    a { border-bottom: 3px solid #c71610; }
   }
 }
 
@@ -351,22 +358,6 @@ main {
   }
 }
 
-@media only screen and (max-width: 395px) {
-  #flex-container {
-    a {
-      padding: 1.4rem 0;
-    }
-  }
-
-  #item {
-    align-items: center;
-    justify-content: center;
-  }
-
-  span {
-    display: none;
-  }
-}
 
 /**
  * Index.html small project cards
