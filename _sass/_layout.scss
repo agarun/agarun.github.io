@@ -342,7 +342,9 @@ main {
     display: block;
     margin-top: 10px;
     margin-left: 36px;
-    a { border-bottom: 3px solid #c71610; }
+    a {
+      border-bottom: 4px solid #c71610;
+    }
   }
 }
 
@@ -357,7 +359,6 @@ main {
     }
   }
 }
-
 
 /**
  * Index.html small project cards
@@ -383,8 +384,8 @@ main {
   justify-content: flex-end;
   align-items: flex-start;
   text-indent: 0;
-  width: 200px;
-  height: 140px;
+  width: 170px;
+  height: 124px;
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
   -webkit-transition: 150ms ease-in;
@@ -399,9 +400,9 @@ main {
     margin-left: 0.65em;
   }
 
-  &:nth-child(1) { background: grey url(https://i.imgur.com/SHNcbKr.png) no-repeat; }
-  &:nth-child(2) { background: DimGrey url(https://i.imgur.com/TNjBQJk.png) -149px -6px no-repeat; }
-  &:nth-child(3) { background: darkgrey url(https://i.imgur.com/tSMxyu9.jpg) 100% 100% no-repeat; }
+  &:nth-child(1) { background: white url(https://i.imgur.com/SHNcbKr.png) no-repeat; }
+  &:nth-child(2) { background: white url(https://i.imgur.com/TNjBQJk.png) -170px -6px no-repeat; } // 149 with higher width
+  &:nth-child(3) { background: white url(https://i.imgur.com/tSMxyu9.jpg) 100% 100% no-repeat; }
 }
 
 .proj-card:hover {
