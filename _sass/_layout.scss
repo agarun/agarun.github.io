@@ -23,6 +23,7 @@ header {
     font-weight: 400;
     position: relative;
     margin-top: 242px; // TOP SPACE. ALTERNATIVE?: VERTICAl-ALIGN: MIDDLE
+    line-height: 80px;
   }
 
   a {
@@ -70,6 +71,8 @@ nav {
     list-style: none;
     font-size: 23px;
     padding: 0;
+    padding-top: 8px;
+    padding-bottom: 12px;
   }
 
   li {
@@ -198,7 +201,7 @@ p.blurb {
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-top: 50px;
+    margin-top: 42px;
   }
 }
 
