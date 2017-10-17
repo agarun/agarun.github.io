@@ -11,7 +11,7 @@ category: posts
     {% for y in site.data.music %}
       <h3 style="margin-top: 30px;">{{ y.year }}</h3>
       {% for a in y.albums %}
-        <a href="{{ a.link }}" class="link-snap">{{ a.artist }} - {{ a.title }}</a><br>
+        <a href="{{ a.link }}" class="link-snap" target="_blank">{{ a.artist }} - {{ a.title }}</a><br>
       {% endfor %}
     {% endfor %}
     <a href="#top" class="link-snap back-to-top">&#x21c8;</a>
