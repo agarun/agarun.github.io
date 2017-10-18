@@ -1,33 +1,24 @@
 ---
 layout: default
 ---
-<!--
-  <p class="fade-on-start fade-in-right blurb">
-    Hey! I'm Aaron. I'm a software engineer in New York City.
-  </p>
--->
 <div class="fade-on-start">
   <div class="content indent">
     <h3>recent work</h3>
       <h2>Projects</h2>
-      <div class="wrapper">
-        <div class="flex-container-proj-cards">
-          <a href="" class="proj-card">
-            <span class="proj-card-title">muvy</span>
-          </a>
-          <a href="" class="proj-card">
-            <span class="proj-card-title">Network Modeling</span>
-          </a>
-          <a href="" class="proj-card">
-            <span class="proj-card-title">see all</span>
-          </a>
-        </div>
-      </div>
+        <p>
+          <a href="" class="link-snap"><em>muvy</em></a>
+          <small>Ruby movie barcode generator</small>
+        </p>
+
+      <!-- short description should be uniform with below & underlines? -->
       <h2>Posts</h2>
         {% for post in site.posts %}
-            <p class="index-posts">
+            <p>
               <a href="{{ post.url }}" class="link-snap">{{ post.title }}</a>
-              <span class="date"> &middot; {{ post.date | date: "%B %Y" }}</span>
+              <br>
+              <span class="date">{{ post.date | date: "%B %Y" }}</span>
+              <!-- <span class="saltire">&#128937;</span> -->
+              <span class="tag">{{ post.tags }}</span>
             </p>
         {% endfor %}
       </p>
