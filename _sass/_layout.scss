@@ -157,7 +157,7 @@ body[data-faded='0'] .fade-on-start {
 body {
   -webkit-font-smoothing: antialiased;
   font-family: 'Work Sans', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.15;
   margin-bottom: 80px;
 }
@@ -189,55 +189,71 @@ body {
 .content {
   a {
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-skip: ink;
+    text-decoration-color: #a770a0;
+    transition: all 0.2s ease-in-out;
+  }
+
+  a:hover {
+    text-decoration-color: black;
+  }
+
+  p {
+    margin-bottom: -6px;
   }
 
   h2 {
-    font-size: 1.4em;
+    font-family: 'Eczar', serif;
+    font-size: 0.74em;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
     margin-top: 30px;
     margin-bottom: -16px;
+    // padding: 3px 4px 0px 4px;
+    // background: #eeeeee;
+    // border-radius: 3px;
+    // max-width: 128px;
   }
 
   h3 {
     font-family: 'Eczar', serif;
     font-size: 18px;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.09em;
     text-transform: uppercase;
     margin-top: 28px;
   }
 }
 
 /**
- * General
- */
-
-.date {
-  font-size: 0.85em;
-  color: grey;
-}
-
-.indent {
-  margin-left: 20px;
-}
-
-/**
  * Index.html
  */
 
-.index-posts {
-  margin-top: 23px;
-  margin-bottom: -16px;
-  min-width: 400px;
+.description {
+  section {
+    display: block;
+    margin: 18px 0px;
+  }
+
+  section:first-child { margin: 28px 0px 0px 0px; }
 }
 
-/**
- * Posts
- */
+.date, .tag, .blurb {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  line-height: 1.9;
+  color: grey;
+  position: relative;
+  top: 0px;
+}
 
-a.back-to-top {
-  line-height: 100px;
-  border: 0px;
+.blurb { text-transform: none; }
+
+.tag { letter-spacing: 0.1em; color: $weird-blue; }
+
+.indent {
+  margin-left: 20px;
 }
 
 /**
@@ -252,11 +268,20 @@ a.back-to-top {
     color: black;
     font-weight: 500;
     text-decoration: none;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid grey;
   }
 
   a:hover {
     border-bottom-color: transparent;
+  }
+
+  /**
+   * Posts
+   */
+
+  .back-to-top {
+    line-height: 100px;
+    border-bottom: 0px;
   }
 }
 
@@ -265,7 +290,7 @@ a.back-to-top {
  */
 
 .email {
-  margin-bottom: 37px;
+  margin-bottom: 28px;
 
   a.title {
     color: black;
@@ -296,6 +321,7 @@ a.back-to-top {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: -6px;
 
   a {
     padding: 0.4rem 1rem;
