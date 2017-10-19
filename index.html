@@ -3,25 +3,38 @@ layout: default
 ---
 <div class="fade-on-start">
   <div class="content indent">
-    <h3>recent work</h3>
-      <h2>Projects</h2>
-        <p>
-          <a href="" class="link-snap"><em>muvy</em></a>
-          <small>Ruby movie barcode generator</small>
-        </p>
-
-      <!-- short description should be uniform with below & underlines? -->
-      <h2>Posts</h2>
-        {% for post in site.posts %}
-            <p>
+      <h2>recent work</h2>
+        <div class="description">
+          <section>
+            <a href="" class="link-snap">Pathing</a>
+            <br>
+            <span class="blurb">Visualizing graph traversal algorithms</span>
+            <span class="tag">JS</span>
+          </section>
+          <section>
+            <a href="" class="link-snap">muvy</a>
+            <br>
+            <span class="blurb">Movie barcode generator</span>
+            <span class="tag">ruby</span>
+          </section>
+          <section>
+            <a href="" class="link-snap">GNM Normal Mode Analysis</a>
+            <br>
+            <span class="blurb">Studying Hepatitis C Virus Dimer Interfaces</span>
+            <span class="tag">R</span>
+          </section>
+        </div>
+      <h2>latest posts</h2>
+        <div class="description">
+          {% for post in site.posts %}
+            <section>
               <a href="{{ post.url }}" class="link-snap">{{ post.title }}</a>
               <br>
               <span class="date">{{ post.date | date: "%B %Y" }}</span>
-              <!-- <span class="saltire">&#128937;</span> -->
               <span class="tag">{{ post.tags }}</span>
-            </p>
-        {% endfor %}
-      </p>
+            </section>
+          {% endfor %}
+      </div>
   </div>
 </div>
 <script>sessionStorage.faded = 1;</script>
