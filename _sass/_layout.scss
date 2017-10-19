@@ -167,17 +167,17 @@ body {
  */
 
 .link-snap {
-  background-image: -webkit-linear-gradient($weird-grey-weak 0%, $weird-grey-weak 100%);
-  background-image: linear-gradient($weird-grey-weak 0%, $weird-grey-weak 100%);
+  background-image: -webkit-linear-gradient($link-grey-weak 0%, $link-grey-weak 100%);
+  background-image: linear-gradient($link-grey-weak 0%, $link-grey-weak 100%);
   background-repeat: repeat-x;
   background-size: 0px 0px;
-  background-position: 0 65%;
-  -webkit-transition: 150ms ease-in-out;
-  transition: 150ms ease-in-out;
+  background-position: 0 65%; // choose between styles `0 65%` and `0 123%`
+  -webkit-transition: 125ms ease-in-out;
+  transition: 125ms ease-in-out;
 
   &:hover {
-    background-image: -webkit-linear-gradient($weird-grey 0%, $weird-grey 100%);
-    background-image: linear-gradient($weird-grey 0%, $weird-grey 100%);
+    background-image: -webkit-linear-gradient($link-grey 0%, $link-grey 100%);
+    background-image: linear-gradient($link-grey 0%, $link-grey 100%);
     background-size: 0.76em 0.76em;
   }
 }
@@ -190,7 +190,7 @@ body {
   a {
     color: $dark-plum;
     text-decoration: none;
-    border-bottom: 1px solid $harder-grey;
+    border-bottom: $link-border-size solid $link-grey;
   }
 
   a:hover {
@@ -266,7 +266,7 @@ body {
     color: black;
     font-weight: 500;
     text-decoration: none;
-    border-bottom: 1px solid $harder-grey;
+    border-bottom: $link-border-size solid $link-grey;
   }
 
   a:hover {
@@ -306,16 +306,19 @@ body {
  */
 
 article {
-  max-width: 55%;
+  max-width: 60%;
 
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0px;
   }
 
   h1 {
-    font-family: 'Eczar', serif;
-    font-size: 1.75em;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    font-weight: 600;
+    letter-spacing: 0.03em;
     margin-top: 50px;
+    margin-bottom: 5px;
   }
 
   hr {
@@ -326,14 +329,21 @@ article {
     margin: 2px 2px 2px 0px;
   }
 
+  h2 {
+    color: #78236d;
+  }
+
   h3 {
     font-family: 'Eczar', serif;
     font-size: .88em;
     font-weight: 700;
-    color: #774a71;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     margin: 40px 0px 0px 0px;
+  }
+
+  p {
+    line-height: 1.5;
   }
 }
 
