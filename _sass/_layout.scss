@@ -190,13 +190,11 @@ body {
   a {
     color: $dark-plum;
     text-decoration: none;
-    padding-bottom: 1px;
     border-bottom: 1px solid $harder-grey;
   }
 
   a:hover {
-    color: black;
-    border-bottom: 2px solid;
+    border-bottom-color: transparent;
   }
 
   p {
