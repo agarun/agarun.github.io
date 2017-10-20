@@ -2,7 +2,7 @@
  * Fonts
  */
 
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display|Eczar:400,700|Work+Sans:300,400,500);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400|Eczar:700|Work+Sans:400,500);
 
 /**
  * Main Site Container
@@ -204,7 +204,7 @@ body {
   h2 {
     font-family: 'Eczar', serif;
     font-size: 0.74em;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     margin-top: 30px;
     margin-bottom: -16px;
@@ -312,37 +312,31 @@ article {
     margin-bottom: 0px;
   }
 
-  h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.2em;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    margin-top: 50px;
-    margin-bottom: 5px;
-  }
-
   hr {
     width: 10%;
     height: 3px;
     background-color: #c6c6c6;
     border: none;
-    margin: 2px 2px 2px 0px;
+    margin: 2px 2px 2px 3px;
   }
 
   h2 {
-    color: #78236d;
+    font-family: 'Eczar', serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    margin: 30px 0px 5px 0px;
+    // opacity BG (like link-snap)
   }
 
   h3 {
-    font-family: 'Eczar', serif;
-    font-size: .88em;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    margin: 40px 0px 0px 0px;
+    color: #78236d;
+    font-size: 1.6em;
   }
 
   p {
+    font-size: 0.85em;
     line-height: 1.5;
   }
 }
