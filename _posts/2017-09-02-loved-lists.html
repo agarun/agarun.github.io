@@ -4,19 +4,17 @@ title: Loved Lists&#58; Albums
 category: posts
 tags: music
 ---
-<div class="about">
-  <div class="content">
-    <h3 id="top">loved lists&#58; albums</h3>
-    My favorite albums from recent years.<br>Browse by year or <span id="puts_random_link"></span>.
+<div class="content about">
+  <h3 id="top">loved lists&#58; albums</h3>
+  My favorite albums from recent years.<br>Browse by year or <span id="puts_random_link"></span>.
 
-    {% for y in site.data.music %}
-      <h3 style="margin-top: 30px;">{{ y.year }}</h3>
-      {% for a in y.albums %}
-        <a href="{{ a.link }}" class="link-snap" target="_blank">{{ a.artist }} - {{ a.title }}</a><br>
-      {% endfor %}
+  {% for y in site.data.music %}
+    <h3 style="margin-top: 30px;">{{ y.year }}</h3>
+    {% for a in y.albums %}
+      <a href="{{ a.link }}" class="link-snap" target="_blank">{{ a.artist }} - {{ a.title }}</a><br>
     {% endfor %}
-    <a href="#top" class="back-to-top">&#x21c8;</a>
-  </div>
+  {% endfor %}
+  <a href="#top" class="back-to-top">&#x21c8;</a>
 </div>
 
 <script>
