@@ -6,7 +6,7 @@ tags: music
 ---
 <div class="content about">
   <h3 id="top">loved lists&#58; albums</h3>
-  My favorite albums from recent years.<br>Browse by year or <span id="puts_random_link"></span>.
+  My favorite albums from recent years.<br>Browse by year or <span id="puts-random-link"></span>.
 
   {% for y in site.data.music %}
     <h3 style="margin-top: 30px;">{{ y.year }}</h3>
@@ -18,12 +18,12 @@ tags: music
 </div>
 
 <script>
-  const music_data = {{ site.data.music | jsonify }};
+  const music = {{ site.data.music | jsonify }};
 
   const randomLink = function() {
-    const random_year = Math.floor(Math.random() * music_data.length);
-    const random_album = Math.floor(Math.random() * (music_data[random_year].albums.length));
-    return (music_data[random_year].albums[random_album].link);
+    const randomYear = Math.floor(Math.random() * music.length);
+    const randomAlbum = Math.floor(Math.random() * (music[randomYear].albums.length));
+    return (music[randomYear].albums[randomAlbum].link);
   };
 
   const buildLink = function() {
@@ -37,5 +37,5 @@ tags: music
     return link;
   }
 
-  document.getElementById("puts_random_link").appendChild(buildLink());
+  document.getElementById("puts-random-link").appendChild(buildLink());
 </script>
