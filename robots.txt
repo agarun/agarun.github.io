@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /Aaron_Agarunov.pdf
+Disallow: /projects*
+Disallow: /projects/
+Disallow: /projects/*
