@@ -5,31 +5,20 @@ layout: default
   <div class="content">
       <h2>recent work</h2>
         <div class="description">
+          {% assign projects = site.projects | sort: 'date' | reverse %}
+          {% for project in projects limit:3 %}
           <section>
-            <a href="" class="link-snap">Pathing</a>
-            <br>
-            <span class="blurb">Visualizing graph traversal algorithms</span>
-            <span class="tag">JS</span>
+            <span class="section-separator"><a href="" class="link-snap">{{ project.short_title }}</a></span>
+            <span class="blurb">{{ project.short_description }}</span>
+            <span class="tag">{{ project.tags[0] }}</span>
           </section>
-          <section>
-            <a href="" class="link-snap">muvy</a>
-            <br>
-            <span class="blurb">Movie barcode generator</span>
-            <span class="tag">ruby</span>
-          </section>
-          <section>
-            <a href="" class="link-snap">GNM Normal Mode Analysis</a>
-            <br>
-            <span class="blurb">Studying Hepatitis C Virus Dimer Interfaces</span><!--TODO ADD TEXT OVERFLOW-->
-            <span class="tag">R</span>
-          </section>
+          {% endfor %}
         </div>
       <h2>latest posts</h2>
         <div class="description">
           {% for post in site.posts %}
             <section>
-              <a href="{{ post.url }}" class="link-snap">{{ post.title }}</a>
-              <br>
+              <span class="section-separator"><a href="{{ post.url }}" class="link-snap">{{ post.title }}</a></span>
               <span class="date">{{ post.date | date: "%B %Y" }}</span>
               <span class="tag">{{ post.tags }}</span>
             </section>
