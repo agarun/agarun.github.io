@@ -1,6 +1,11 @@
 User-Agent: *
-Allow: /
-Disallow: /Aaron_Agarunov.pdf
+Disallow: /Aaron_Agarunov_resume.pdf
 Disallow: /projects*
 Disallow: /projects/
 Disallow: /projects/*
+Disallow: /files*
+Disallow: /files/
+Disallow: /files/*
+Disallow: /assets*
+Disallow: /assets/
+Disallow: /assets/*
