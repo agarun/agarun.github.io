@@ -8,7 +8,7 @@ layout: default
           {% assign projects = site.projects | sort: 'date' | reverse %}
           {% for project in projects limit:3 %}
           <section>
-            <span class="section-separator"><a href="" class="link-snap">{{ project.short_title }}</a></span>
+            <span class="section-separator"><a href="{{ project.web_link }}" class="link-snap" target="_blank">{{ project.short_title }}</a></span>
             <span class="blurb">{{ project.short_description }}</span>
             <span class="tag">{{ project.tags[0] }}</span>
           </section>
