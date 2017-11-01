@@ -1,5 +1,4 @@
 User-Agent: *
-Disallow: /Aaron_Agarunov_resume.pdf
 Disallow: /projects*
 Disallow: /projects/
 Disallow: /projects/*
