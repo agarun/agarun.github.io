@@ -7,6 +7,11 @@ My homepage built with Jekyll and SASS. The data files here are used to generate
 ├── 404.html
 │
 ├── assets
+│   ├── files
+│   │   ⋮
+│   │   └── resume.pdf
+│   ├── images
+│   │   └── thumbnails…
 │   └── main.scss
 │
 ├── _sass
