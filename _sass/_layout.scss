@@ -484,35 +484,29 @@ article {
   border-radius: 6px;
   transition: 150ms ease-out;
 
-  // TODO: compress all!
   &:nth-child(2) {
     background: #27055d url('/assets/images/thumbnails/pathing_01.png') no-repeat 56% 42%;
     background-size: 130%;
-    border: 4px #e2957d solid;
   }
 
   &:nth-child(4) {
     background: red url('/assets/images/thumbnails/muvy_01.png') no-repeat 100% 0%;
     background-size: 140%;
-    border: 4px #e292a0 solid;
   }
 
   &:nth-child(6) {
     background: grey url('/assets/images/thumbnails/gnm_01.png') no-repeat 3% 47%;
     background-size: 108%;
-    border: 4px #e8e0e0 solid;
   }
 
   &:nth-child(8) {
     background: #15b598 url('/assets/images/thumbnails/bizviz_01.png') no-repeat 52% 67%;
     background-size: 155%;
-    border: 4px #d8ebe3 solid;
   }
 
   &:hover {
     transition: 150ms ease-in;
     opacity: 0.85;
-    border-color: #c8c8c8;
   }
 
   // @media only screen and (max-width: 1024px) {
