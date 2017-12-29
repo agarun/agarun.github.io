@@ -1,5 +1,9 @@
 - year: 2017
   albums:
+    - artist: Rosal&‌iacute;a
+      title: Los &‌Aacute;ngeles
+      link: https://www.youtube.com/watch?v=0OMwDZUWl5g
+
     - artist: Kamasi Washington
       title: Harmony of Difference
       link: https://www.youtube.com/watch?v=rtW1S5EbHgU
@@ -165,8 +169,8 @@
 
 - year: 2013
   albums:
-    - artist: More Is Than Isn't
-      title: RJD2
+    - artist: RJD2
+      title: More Is Than Isn't
       link: https://www.youtube.com/watch?v=QXiQsrctShk
 
     - artist: Nico Segal
