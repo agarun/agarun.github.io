@@ -500,8 +500,9 @@ article {
   transition: 200ms ease-in;
 
   &:nth-child(2) {
-    background: transparent url('/assets/images/thumbnails/foton_01.png') no-repeat 56% 42%;
-    background-size: 130%;
+    background: transparent url('/assets/images/thumbnails/foton_01.png') no-repeat 20% 0;
+    background-size: 105%;
+    border: 1px solid #f7f7f7;
   }
 
   &:nth-child(4) {
