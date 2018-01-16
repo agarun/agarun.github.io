@@ -451,25 +451,40 @@ article {
 .work-description {
   flex-basis: 400px;
   flex-shrink: 0;
-  width: 100%;
   align-self: flex-start;
-  margin: 0 20px 40px 0px;
+  width: 100%;
+  height: 298px;
+  background-color: #fff;
+  border-right: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
 
   h1 {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 34px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    width: 100%;
+    padding: 20px 0 0 20px;
     margin: 0;
+    margin-right: 20px;
+    font-size: 32px;
+    font-weight: 500;
     line-height: 1.05;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: subpixel-antialiased;
+    border-top-left-radius: 6px;
   }
 
   p {
+    padding: 10px 20px;
+    padding-top: 0;
     font-size: 18px;
     line-height: 1.35;
+  }
+
+  a {
+    text-decoration: none;
+    color: $weird-blue;
+
+    &:hover {
+      color: darken($link-grey, 20%);
+    }
   }
 }
 
@@ -480,27 +495,32 @@ article {
   max-width: 350px;
   height: 300px;
   background-color: #000;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   border-radius: 6px;
-  transition: 150ms ease-out;
+  transition: 200ms ease-in;
 
   &:nth-child(2) {
-    background: #27055d url('/assets/images/thumbnails/pathing_01.png') no-repeat 56% 42%;
+    background: transparent url('/assets/images/thumbnails/foton_01.png') no-repeat 56% 42%;
     background-size: 130%;
   }
 
   &:nth-child(4) {
-    background: red url('/assets/images/thumbnails/muvy_01.png') no-repeat 100% 0%;
-    background-size: 140%;
+    background: transparent url('/assets/images/thumbnails/pathing_01.png') no-repeat 56% 42%;
+    background-size: 130%;
   }
 
   &:nth-child(6) {
-    background: grey url('/assets/images/thumbnails/gnm_01.png') no-repeat 3% 47%;
-    background-size: 108%;
+    background: transparent url('/assets/images/thumbnails/muvy_01.png') no-repeat 100% 0%;
+    background-size: 140%;
   }
 
   &:nth-child(8) {
-    background: #15b598 url('/assets/images/thumbnails/bizviz_01.png') no-repeat 52% 67%;
+    background: transparent url('/assets/images/thumbnails/gnm_01.png') no-repeat 3% 47%;
+    background-size: 108%;
+  }
+
+  &:nth-child(10) {
+    background: transparent url('/assets/images/thumbnails/bizviz_01.png') no-repeat 52% 67%;
     background-size: 155%;
   }
 
@@ -550,7 +570,6 @@ article {
   width: 170px;
   height: 124px;
   border-radius: 4px;
-  // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(12, 12, 13, 0.1);
   -webkit-transition: 150ms ease-in;
   transition: 150ms ease-in;
