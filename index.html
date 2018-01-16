@@ -3,27 +3,17 @@ layout: default
 ---
 <div class="fade-on-start">
   <div class="content">
-      <h2>recent work</h2>
-        <div class="description">
-          {% assign projects = site.projects | sort: 'date' | reverse %}
-          {% for project in projects limit:3 %}
-          <section>
-            <span class="section-separator"><a href="{{ project.web_link }}" class="link-snap" target="_blank">{{ project.short_title }}</a></span>
-            <span class="blurb">{{ project.short_description }}</span>
-            <span class="tag">{{ project.tags[0] }}</span>
-          </section>
-          {% endfor %}
-        </div>
-      <h2>latest posts</h2>
-        <div class="description">
-          {% for post in site.posts %}
-            <section>
-              <span class="section-separator"><a href="{{ post.url }}" class="link-snap">{{ post.title }}</a></span>
-              <span class="date">{{ post.date | date: "%B %Y" }}</span>
-              <span class="tag">{{ post.tags }}</span>
-            </section>
-          {% endfor %}
-      </div>
+    <h2>recent work</h2>
+    <div class="description">
+      {% assign projects = site.projects | sort: 'date' | reverse %}
+      {% for project in projects limit:3 %}
+      <section>
+        <span class="section-separator"><a href="{{ project.web_link }}" class="link-snap" target="_blank">{{ project.short_title }}</a></span>
+        <span class="blurb">{{ project.short_description }}</span>
+        <span class="tag">{{ project.tags[0] }}</span>
+      </section>
+      {% endfor %}
+    </div>
   </div>
 </div>
 <script>sessionStorage.faded = 1;</script>
