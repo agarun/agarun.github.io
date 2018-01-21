@@ -500,27 +500,33 @@ article {
   transition: 200ms ease-in;
 
   &:nth-child(2) {
+    background: transparent url('/assets/images/thumbnails/kume_01.png') no-repeat 20% 0;
+    background-size: 100%;
+    border: 1px solid #f7f7f7;
+  }
+
+  &:nth-child(4) {
     background: transparent url('/assets/images/thumbnails/foton_01.png') no-repeat 20% 0;
     background-size: 105%;
     border: 1px solid #f7f7f7;
   }
 
-  &:nth-child(4) {
+  &:nth-child(6) {
     background: transparent url('/assets/images/thumbnails/pathing_01.png') no-repeat 56% 42%;
     background-size: 130%;
   }
 
-  &:nth-child(6) {
+  &:nth-child(8) {
     background: transparent url('/assets/images/thumbnails/muvy_01.png') no-repeat 100% 0%;
     background-size: 140%;
   }
 
-  &:nth-child(8) {
+  &:nth-child(10) {
     background: transparent url('/assets/images/thumbnails/gnm_01.png') no-repeat 3% 47%;
     background-size: 108%;
   }
 
-  &:nth-child(10) {
+  &:nth-child(12) {
     background: transparent url('/assets/images/thumbnails/bizviz_01.png') no-repeat 52% 67%;
     background-size: 155%;
   }
