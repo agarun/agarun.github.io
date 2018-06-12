@@ -1,5 +1,27 @@
+- year: 2018
+  albums:
+    - artist: Natalia Lafourcade
+      title: Musas Vol 2
+      link: https://www.youtube.com/watch?v=gLRP5oPmqyI&list=PLLAr3VereViAANxEUe5uRcn7wuwG77bJ8
+
+    - artist: Jorja Smith
+      title: Lost & Found
+      link: https://www.youtube.com/watch?v=9xZ6P4Sinvw&list=PLLR6JpZw0xz7pXIEOnetIO_vl9bUcmk2x
+
+    - artist: Against All Logic
+      title: 2012 - 2017
+      link: https://www.youtube.com/watch?v=dGQwDOEC-ro&list=PL9rByFUQL1ASXGUMp8z-HNtn8wfhJG9r2
+
+    - artist: Kali Uchis
+      title: Isolation
+      link: https://www.youtube.com/watch?v=QqLrVzCtVt0&list=PLzmZzpskmgp__g5xg4QtOPrxXgq6trd_1&index=1
+
 - year: 2017
   albums:
+    - artist: Billie Eilish
+      title: dont smile at me
+      link: https://www.youtube.com/watch?v=ebb5AinKxWI&index=1&list=PLGPPZlg_qVpt8sTlpcLvznEGb5ZbjSy9k
+
     - artist: Rosalia
       title: Los Angeles
       link: https://www.youtube.com/watch?v=0OMwDZUWl5g
@@ -39,7 +61,6 @@
     - artist: Sampha
       title: Process
       link: https://www.youtube.com/watch?v=_NSuIYwBxu4&list=PLJNbijG2M7Ow4FGUeMLrXdrIAbsToNsxL
-
 
 - year: 2016
   albums:
