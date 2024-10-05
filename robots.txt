@@ -1,10 +1,2 @@
 User-Agent: *
-Disallow: /projects*
-Disallow: /projects/
-Disallow: /projects/*
-Disallow: /files*
-Disallow: /files/
-Disallow: /files/*
-Disallow: /assets*
-Disallow: /assets/
-Disallow: /assets/*
+Disallow: /
